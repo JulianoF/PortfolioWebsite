@@ -1,0 +1,109 @@
+
+#mainContainer {
+    display: inline-block;
+    min-height: 90vh;
+    width: 100%;
+    overflow: auto;
+
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+#mainContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1{
+    margin: auto;
+    text-align: center;
+}
+
+.left-sub {
+    float: left;
+    width: 10%;
+    min-height: 90vh;
+
+    margin-left: 10px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
+}
+.right-sub {
+    float: left;
+    width: 88%;
+    min-height: 90vh;
+
+    margin-left: 16px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.side-nav {
+    color: black;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 2em;
+}
+.side-nav li{
+    padding-bottom: 5em
+}
+.side-nav li button{
+    display: block;
+    border: none;
+
+    font-size: 0.8vw;
+    font-family: 'Lucida Console';
+
+    padding: 24px 28px;
+    margin: auto;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+
+.button-30 {
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+

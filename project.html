@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--<link rel="stylesheet" href="index.css">-->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="projects.css">
+
+    <script>
+        function updateProject(value) {
+            document.getElementById("content-title").innerHTML = value;
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="navBar">
+        <ul class="nav-list">
+            <li class="nav-item"><img src="imgs/test.jpg" /></li>
+            <li class="nav-item"><span class="nav-text">Juliano Falotico</span></li>
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="project.html">Projects</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+            <li class="nav-item" style="float:right"><a class="about" href="about.html">Login</a></li>
+        </ul>
+    </div>
+    <div id="mainContainer">
+        <div id="contentContainer">
+            <div class="left-sub">
+                <ul class="side-nav">
+
+                    <li> <button class="button-30" type="button" onclick="updateProject('Project 1');">Project 1</button></li>
+                    <li> <button class="button-30" type="button" onclick="updateProject('Project 2');">Project 2</button></li>
+                    <li> <button class="button-30" type="button" onclick="updateProject('Project 3');">Project 3</button></li>
+                </ul>
+            </div>
+            <div class="right-sub">
+                <h2 id="content-title" style="padding-left: 1em;">To View a Project, Choose a Project on the left</h2>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright Juliano 2022</p>
+    </div>
+</body>
+</html>

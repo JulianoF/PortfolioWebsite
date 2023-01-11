@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#navBar {
+    background-color: #3f65c2;
+    font-family: system-ui;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.nav-item{
+    float: left;
+}
+.nav-item a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-text {
+    color: white;
+    font-size: 30px;
+    padding: 12px 14px;
+    display: block;
+}
+.nav-item img{
+    height: 3.7em;
+    overflow: hidden;
+    padding-top:4px;
+    padding-left: 4px;
+}
+.nav-item a:hover:not(.about) {
+    background-color: #698ce3;
+
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+}
+.about {
+    background-color: #04BB5A;
+}
+.about:hover{
+    background-color: #04AA6D;
+}
+.footer{
+    height: 5vh;
+}
+.footer p{
+    float: right;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+/*#header {
+    height: 10vh;
+}
+.header-img {
+    background-image: url("imgs/test.jpg");
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+
+    filter: blur(4px);
+}
+.header-text {
+
+}
+#header h1 {
+    margin: 0;
+    padding-left: 15px;
+}*/
